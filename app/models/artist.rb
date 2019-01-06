@@ -1,3 +1,5 @@
 class Artist < ActiveRecord::Base
-  hash_many :songs
+  has_many :songs
+  hash_man :genres, through: :songs
+  
 end
